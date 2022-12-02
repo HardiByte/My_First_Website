@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<!-- 2 entries, font-families, Table, External Link, Internal Link, IMG link, use css to make the blog look cute -->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Project: Blog</title>
+        
+        <style>
+        
+        body {
+            background-color:pink;
+            font-family:serif;
+        }
+            
+           .button-36 {
+  background-image: linear-gradient(92.88deg, #455EB5 9.16%, #5643CC 43.89%, #673FD7 64.72%);
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  flex-shrink: 0;
+  font-family: "Inter UI","SF Pro Display",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  height: 1.5rem;
+  padding: 0 1.6rem;
+  text-align: center;
+  text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+  transition: all .5s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-36:hover {
+  box-shadow: rgba(80, 63, 205, 0.5) 0 1px 30px;
+  transition-duration: .1s;
+}
+
+.container {
+  overflow: hidden;
+}
+
+.filterDiv {
+  float: left;
+  background-color: #2196F3;
+  color: #ffffff;
+  width: 100px;
+  line-height: 100px;
+  text-align: center;
+  margin: 2px;
+  display: none; /* Hidden by default */
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: #061e38;
+  cursor: pointer;
+  color: white;
+}
+
+/* Add a light grey background on mouse-over */
+.btn:hover {
+  background-color: #387fad;
+}
+
+/* Add a dark background to the active button */
+.btn.active {
+  background-color: #061e38;
+  color: white;
+}
+
+table, th, td {
+  border: 1px solid;
+  color:#c93a72;
+}
+            
+        </style>
+    </head>
+    <body>
+        
+        <h1>2022 Gift Giving List</h1>
+        
+            <!-- Control buttons -->
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+  <button class="btn" onclick="filterSelection('cars')"> Under $20</button>
+  <button class="btn" onclick="filterSelection('animals')"> $20-$50</button>
+  <button class="btn" onclick="filterSelection('fruits')"> $50-$100</button>
+  <button class="btn" onclick="filterSelection('colors')"> $100+</button>
+</div>
+
+        <h3>Contents</h3>
+        <ul>
+            <a href="#bag" ><li>The Instant Bag Hanger Collection</li> </a>
+            <a href="#condiment"><li>Wooden Condiment Set</li></a>
+            <a href="#humidifier"><li>Cool Mist USB Humidifier</li></a>
+            <a href="#tool"><li>8 in 1 Kitchen Tool Set</li></a>
+            <a href="#toothpaste"><li>Toothpaste Dispenser</li></a>
+            <a href="#car"><li>Small Size Upgraded Car Trunk Organizer With Lid</li></a>
+            <a href="#owl"><li>Owl Soup Bowl</li></a>
+            <a href="#bee"><li>Burt's Bees Everyday Essentials Set</li></a>
+            <a href="#mug"><li>Peekaboo Ceramic 12 oz Mug</li></a>
+            <a href="#paint"><li>Acrylic Paint Pens</li></a>
+            <a href="#light"><li>Electric Lighter</li></a>
+            
+        </ul>
+        
+        <hr>
+        
+        <!-- Bag Hanger -->
+        
+        <h2 id="bag">The Instant Bag Hanger Collection</h2>
+        <a href="https://www.amazon.com/gp/product/B016212Y54?tag=ei-wish-other-20">
+        
+            <button class="button-36">Find on Amazon</button>
+            
+        </a>
+        
+        <hr>
+        
+        <!-- Condiment Set -->
+        
+        <h2 id="condiment">Wooden Condiment Set</h2>
+        <a href="https://www.amazon.com/gp/product/B00M2IAPXK?tag=ei-wish-other-20">
+        
+            <button class="button-36">Find on Amazon</button>
+        
+        </a>
+        
+        <hr>
+        
+        <!-- USB Humidifier -->
+        
+        <h2 id="humidifier">Cool Mist USB Humidifier</h2>
+        <a href="https://www.amazon.com/gp/product/B07WFS2VQP?tag=ei-wish-other-20&th=1">
+        
+            <button class="button-36">Find on Amazon</button>
+            
+        </a>
+        
+        <hr>
+        
+        <!-- Kitchen Tool Set -->
+        
+        <h2 id="tool">8 in 1 Kitchen Tool Set</h2>
+        <a href="https://www.amazon.com/gp/product/B01C5PBIN0?tag=ei-wish-other-20">
+        
+        <button class="button-36">Find on Amazon</button>
+            
+        </a>
+        
+        <hr>
+        
+        <!-- Toothpaste Dispenser -->
+        
+        <h2 id="toothpaste">Toothpaste Dispenser</h2>
+        <a href="https://www.amazon.com/gp/product/B08JKH2SWN?tag=ei-wish-other-20">
+        
+            <button class="button-36">Find on Amazon</button>
+            
+        </a>
+        
+        <hr>
+        
+        <!-- Car Organizer -->
+        
+        <h2 id="car">Small Size Upgraded Car Trunk Organizer With Lid</h2>
+        <a href="https://www.amazon.com/gp/product/B0B87Q5H52?tag=ei-wish-other-20&th=1">
+        
+        <button class="button-36">Find on Amazon</button>
+            
+            
+        </a>
+        
+        <hr>
+        
+        <!-- Owl Soup Bowl -->
+        
+        <h2 id="owl">Owl Soup Bowl</h2>
+        <a href="https://www.uncommongoods.com/product/owl-soup-bowl?clickid=S0xxNtXAdxyIUSvzdP39NWe-UkA0mFxFz0Ky280&irgwc=1&utm_source=Skimbit%20Ltd.&utm_medium=affiliates&utm_campaign=8444&utm_term=Online%20Tracking%20Link&trafficSource=Impact&sharedid=elfster.com">
+       
+        <button class="button-36">Find on UncommonGoods.com</button>
+            
+        </a>
+        
+        <hr>
+        
+        <!-- Burt's Bees -->
+        
+        <h2 id="bee">Burt's Bees Everyday Essentials Set</h2>
+        <a href="https://www.amazon.com/gp/product/B004EDWMBO?tag=ei-wish-other-20">
+        
+        <button class="button-36">Find on Amazon</button>
+            
+        </a>
+        
+        <hr>
+        
+        <h2 id="mug">Peekaboo Ceramic 12 oz Mug</h2>
+        <a href="https://www.urbanoutfitters.com/shop/peekaboo-ceramic-mug?utm_medium=affiliates&utm_source=LS&utm_campaign=Skimlinks.com&utm_term=1214332&utm_content=1&ranMID=43176&ranEAID=TnL5HPStwNw&ranSiteID=TnL5HPStwNw-E0KlhAUHvTvgONkcDgsryw&color=062&type=REGULAR&size=ONE%20SIZE&quantity=1">
+        
+        <button class="button-36">Find on UrbanOutfitters.com</button>
+            
+        </a>
+        
+        <hr>
+        
+        <!-- Paint Pens -->
+        
+        <h2 id="paint">Acrylic Paint Pens</h2>
+        <a href="https://www.amazon.com/gp/product/B08662HX82?tag=ei-wish-other-20&th=1">
+        
+        <button class="button-36">Find on Amazon</button>
+            
+        </a>
+        
+         <hr>
+         
+         <!-- Electric Lighter -->
+        
+        <h2 id="light">Electric Lighter</h2>
+        <a href="https://www.amazon.com/gp/product/B08SJ3KTB2?tag=ei-wish-other-20&th=1">
+        
+        <button class="button-36">Find on Amazon</button>
+            
+        </a>
+        
+        <hr>
+        
+        
+    <table>
+        <thead>
+            <th>Product</th>
+            <th>Price</th>
+            <th>Rating</th>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Bag Hanger</td>
+            <td>$5.00</td>
+            <td>5 Stars</td> 
+        </tr>
+        <tr>
+            <td>Wooden Condiment Set</td>
+            <td>$90.00</td>
+            <td>4 Stars</td> 
+        </tr>
+        <tr>
+            <td>Cool Mist USB Humidifier</td>
+            <td>$10.00</td>
+            <td>3 Stars</td> 
+        </tr>
+        <tr>
+            <td>8 in 1 Kitchen Tool Set</td>
+            <td>$10.00</td>
+            <td>5 Stars</td> 
+        </tr>
+        <tr>
+            <td>Toothpaste Dispenser</td>
+            <td>$107.00</td>
+            <td>5 Stars</td> 
+        </tr>
+        <tr>
+            <td>Car Trunk Organizer</td>
+            <td>$35.00</td>
+            <td>4 Stars</td> 
+        </tr>
+        <tr>
+            <td>Owl Soup Bowl</td>
+            <td>$5.00</td>
+            <td>5 Stars</td> 
+        </tr>
+        <tr>
+            <td>Burt's Bees Essentials</td>
+            <td>$25.00</td>
+            <td>4 Stars</td> 
+        </tr>
+        <tr>
+            <td>Peekaboo Ceramic Mug</td>
+            <td>$1000.00</td>
+            <td>5 Stars</td> 
+        </tr>
+        <tr>
+            <td>Acrylic Paint Pens</td>
+            <td>$28.00</td>
+            <td>3 Stars</td> 
+        </tr>
+        <tr>
+            <td>Electric Lighter</td>
+            <td>$30.00</td>
+            <td>2 Stars</td> 
+        </tr>
+        </tbody>
+    </table>
+        
+        
+    </body>
+</html>
